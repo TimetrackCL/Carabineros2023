@@ -1,0 +1,756 @@
+/* ---------------------------------------
+
+[Master Stylesheet]
+
+Project:    	28 Corrida Carabineros de Chile 2023
+Version:    	1
+Last Change:    15/04/2023
+
+------------------------------------------
+
+[Table of contents]
+
+1. Reset
+2. Root
+3. Global Settings
+4. Color Class Text
+5. Background Class
+6. Grid Custom Style
+7. Buttons/Links Style
+8. Titles/Subtitles Style
+9. Welcu Style
+10. Nav
+11. Hero
+12. Carousel
+13. Count Down
+14. Information Section
+15. Bases Section
+16. Time Start Section
+17. Schedule Section
+18. Sponsor Section
+19. Footer
+20. BreakPoints
+
+-------------------------------------------*/
+
+/*** 
+
+====================================================================
+    1. Reset
+====================================================================
+
+ ***/
+ 
+ * {
+	margin:0px;
+	padding:0px;
+	border:none;
+	outline:none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** 
+
+====================================================================
+	2. Root
+====================================================================
+
+***/
+
+:root {
+    --black--primary: #030304;
+    --gray--text: #696969;
+    --greene: #008839;
+    --blue: #2b3c7d;
+    --gray--primary: #6d6d6d;
+    --gray--secondary: #a4a5a0;
+
+    --font--bebas: 'Bebas Neue', cursive;
+    --font--poppins: 'Poppins', sans-serif
+
+}
+
+
+/*** 
+
+====================================================================
+	3. Global Settings
+====================================================================
+
+***/
+
+body {
+    box-sizing: border-box;
+    font-family: var(--font--poppins);
+    color: var(--gray--text);
+    font-size: 1rem;
+}
+
+.iframe__maps {
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+}
+
+
+.img--responsive {
+    width: 100%;
+    height: auto;
+}
+
+.info__img {
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+    max-width: 600px;
+    border: 10px solid #fff;
+}
+
+.py__section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+
+
+
+/*** 
+
+====================================================================
+	4. Color Class Text
+====================================================================
+
+***/
+
+.color--black--primary {
+    color: var(--black--primary);
+}
+
+.color--gray--text {
+    color: var(--gray--text);
+}
+
+.color--greene {
+    color: var(--greene);
+}
+
+.color--blue {
+    color: var(--blue);
+}
+
+.color--gray--primary {
+    color: var(--gray--primary);
+}
+
+.color--gray--secondary {
+    color: var(--gray--secondary);
+}
+
+.color--white {
+    color: #fff;
+}
+
+.color--light-greene {
+    color: #92c020;
+}
+
+
+/*** 
+
+====================================================================
+	5. Background Class
+====================================================================
+
+***/
+
+.bg--black--primary {
+    background-color: var(--black--primary);
+}
+
+.bg--gray--text {
+    background-color: var(--gray--text);
+}
+
+.bg--greene {
+    background-color: var(--greene);
+}
+
+.bg--light-greene {
+    background-color: #92c020;
+}
+
+.bg--blue {
+    background-color: var(--blue);
+}
+
+.bg--gray--primary {
+    background-color: var(--gray--primary);
+}
+
+.bg--gray--secondary {
+    background-color: var(--gray--secondary);
+}
+
+.bg--light-gray {
+    background-color: #f7f7f7;
+}
+
+.box-shadow {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+
+/*** 
+
+====================================================================
+	6. Grid Custom Style
+====================================================================
+
+***/
+
+.grid__two--equal,
+.grid__three--equal,
+.grid__five--equal {
+    display: grid;
+}
+
+.row__gap--small {
+    row-gap: 2rem;
+}
+
+.column-gap--medium {
+    column-gap: 4rem;
+}
+
+.order--2 {
+    order: 2;
+}
+
+.order--1 {
+    order: 1;
+}
+
+.content__center--x {
+    display: flex;
+    justify-content: center;
+}
+
+.content__center--y {
+    display: flex;
+    align-items: center;
+}
+
+.content__center--xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__end--x {
+    display: flex;
+    justify-content: end;
+}
+
+/*** 
+
+====================================================================
+	7. Buttons/Links Style
+====================================================================
+
+***/
+
+.button__box {
+    display: flex;
+    justify-content: end;
+}
+
+.button__nav {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    background-color: #92c020;
+    border: 3px solid transparent;
+    padding: 15px 3rem;
+}
+
+
+.button__nav:hover {
+    border: 3px solid #fff;
+    color: white;
+}
+
+
+.button__primary {
+    padding: 15px 5rem;
+    color: var(--blue);
+    border: 0;
+    text-decoration: none;
+    font-weight: 700;
+    border: 5px solid var(--blue);
+    width: 100%;
+    text-align: center;
+}
+
+
+.button__primary:hover {
+    background-color: var(--blue);
+    color: white;
+    border: 5px solid transparent;
+}
+
+.button__secondary {
+    font-family: var(--font--bebas);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--black--primary);
+    padding-bottom: 4px;
+}
+
+
+.button__secondary:hover {
+    border-bottom: 5px solid var(--blue);
+    color: var(--blue);
+}
+
+.button__bases {
+    font-family: var(--font--bebas);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 4px;
+}
+
+
+.button__bases:hover {
+    border-bottom: 5px solid var(--greene);
+}
+
+
+/*** 
+
+====================================================================
+	8. Titles/Subtitles/Text Style
+====================================================================
+
+***/
+
+.title__section,
+.title__section--small {
+    font-family: var(--font--bebas);
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+.title__section {
+    margin-bottom: 3rem;
+}
+
+.title__section--small {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.title {
+    
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+
+.sub-title {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+
+.text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/*** 
+
+====================================================================
+	9. Welcu Style
+====================================================================
+
+***/
+
+.welcu_embed {
+    
+}
+
+.welcu_embed #wlc-table-tickets {
+    border: 10px solid #f2f4f7!important;
+    box-shadow: 0 30px 50px rgba(8,13,62,.15);
+}
+
+/*** 
+
+====================================================================
+	10. Nav
+====================================================================
+
+***/
+.bg__nav {
+    background-color: rgba(3, 3, 4, 0.3);
+}
+
+.navbar-brand {
+    max-width: 200px;
+    height: auto!important;
+}
+
+.navbar-toggler {
+    border: 2px solid #fff;
+}
+
+
+.navbar-toggler-icon {
+    color: #fff;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse {
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+
+.navbar-nav .nav-link.active {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #92c020;
+}
+
+/*** 
+
+====================================================================
+	11. Hero
+====================================================================
+
+***/
+.hero {
+    background: rgba(109,109,109,1);
+    background: -moz-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(109,109,109,1)), color-stop(16%, rgba(109,109,109,1)), color-stop(100%, rgba(164,165,160,1)));
+    background: -webkit-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: -o-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: -ms-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: linear-gradient(to bottom, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#a4a5a0', GradientType=0 );
+    height: 506px;
+    width: 100%;
+    display: flex;
+
+}
+
+.hero__deco {
+    position: absolute;
+}
+
+.hero__logo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.logo__hero {
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    max-width: 200px;
+}
+
+
+/*** 
+
+====================================================================
+	12. Distances Section
+====================================================================
+
+***/
+.distances__box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.distance__box {
+    background-color: white;
+    margin-bottom: 6rem;
+}
+
+.distance_hour {
+    font-family: var(--font--bebas);
+    color: var(--black--primary);
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+
+.distance_distance {
+    font-family: var(--font--bebas);
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    letter-spacing: 2px;
+}
+
+
+
+/*** 
+
+====================================================================
+	13. Tickets Section
+====================================================================
+
+***/
+
+ .tickets__date {
+    font-weight: 700;
+ }
+
+/*** 
+
+====================================================================
+	14. Footer
+====================================================================
+
+***/
+
+.logo__footer {
+    max-width: 300px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/*** 
+
+====================================================================
+	14. Count Down
+====================================================================
+
+***/
+
+.box__clock {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.count__title  {
+    font-family: var(--font--poppins);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+
+.count__time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+
+}
+
+.clock__box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text--hour {
+    font-family: var(--font--poppins);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.text--hour-text {
+    font-family: var(--font--poppins);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/*** 
+
+====================================================================
+	20. BreakPoints
+====================================================================
+
+***/
+
+@media only screen and (min-width: 600px) {
+    .hero {
+        height: 296px;
+    }
+
+    .hero__logo {
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        margin-left: -2rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+    .grid__two--equal {
+        grid-template-columns: 40% 1fr;
+        column-gap: 2rem;
+    }
+
+    .grid__three--equal,
+    .grid__five--equal {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .order--2 {
+        order: 1;
+    }
+    
+    .order--1 {
+        order: 2;
+    }
+
+    .box__clock {
+        flex-direction: row;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .count__time {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    .count__title  {
+        min-width: 500px;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    .button__primary {
+        width: 300px;
+    }
+
+    .navbar-expand-md .navbar-nav {
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .hero {
+        height: 490px;
+    }
+
+    .hero__logo {
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        margin-left: -2rem;
+    }
+
+    .logo__hero {
+        max-width: 300px;
+        padding-top: 5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .grid__five--equal {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .distances__box {
+        flex-direction: row;
+    }
+
+    #info {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .text--hour {
+        font-size: 2rem;
+    }
+    
+    .text--hour-text {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        height: 690px;
+    }
+
+    .logo__hero {
+        max-width: 400px;
+    }
+   
+
+  
+}
+
+@media only screen and (min-width: 1500px) {
+    .hero {
+        height: 740px;
+    }
+
+    .logo__hero {
+        max-width: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 1900px) {
+    .hero {
+        height: 980px;
+    }
+
+    .logo__hero {
+        max-width: 600px;
+    }
+
+}
+

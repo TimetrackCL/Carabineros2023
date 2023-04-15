@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b325f11eca.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Effect -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>28 Corrida Carabineros de Chile</title>
+
+</head>
+<body data-spy="scroll">
+
+    <nav id="menu" class="navbar fixed-top navbar-expand-md bg__nav box-shadow">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="img/logos/logo_carabineros_chile_blanco_desktop.png" alt="Logo Carabineros de Chile" class="w-100 logo--menu d-none d-md-block">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">INFORMACIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#distances">DISTANCIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#place">LUGAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bases">BASES</a>
+                    </li>
+                </ul>
+                <a href="#tickets" class="button__nav" >INSCRÍBETE <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+
+        <div class="hero__deco">
+            <picture>
+                <source media="(max-width: 599px)" srcset="img/28-Corrida-Carabineros-de-Chile_mobile.webp" type="image/webp">
+                <source media="(min-width: 600px)" srcset="img/28-Corrida-Carabineros-de-Chile_desktop.webp" type="image/webp">
+                <source media="(min-width: 600px)" srcset="img/28-Corrida-Carabineros-de-Chile_desktop.png" type="image/jpg">
+                <img 
+                    alt="28 Corrida Carabineros de Chile" 
+                    class="img--responsive" 
+                    src="img/28-Corrida-Carabineros-de-Chile_mobile.png" 
+                    >
+            </picture>
+        </div>
+
+        <div class="hero__logo">
+            <picture>
+                <source srcset="img/logos/logo_corrida_carabineros.webp" type="image/webp">
+                <img 
+                    alt="28 Corrida - Carabineros de Chile" 
+                    class="img--responsive logo__hero" 
+                    src="img/logos/logo_corrida_carabineros.png" 
+                    data-aos="fade-up"
+                    >
+            </picture>
+        </div>
+    </header>
+
+
+    <!-- Cuenta regresiva -->
+    <div class="count__down color--white bg--greene">
+        <div class="container box__clock">
+            <div class="content__center--y count__title__box">
+                <div>
+                    <h3 class="count__title text-center">¡Tú Momento ha Llegado <br>el RELOJ ya está en Marcha!</h3>
+                </div>
+            </div>
+    
+            <div class="count__time w-100">
+                <div class="content__center--xy">
+                    <div class="clock__box">
+                        <span id="days" class="text--hour"></span>
+                        <span class="text--hour-text">Días</span>
+                    </div>
+                </div>
+                <div class="content__center--xy">
+                    <div class="clock__box">
+                        <span id="hour" class="text--hour"></span>
+                        <span class="text--hour-text">Horas</span>
+                    </div>
+                </div>
+                <div class="content__center--xy">
+                    <div class="clock__box">
+                        <span id="min" class="text--hour"></span>
+                        <span class="text--hour-text">Minutos</span>
+                    </div>
+                </div>
+                <div class="content__center--xy">
+                    <div class="clock__box">
+                        <span id="seg" class="text--hour"></span>
+                        <span class="text--hour-text">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <main>
+        <!-- INFO GENERAL -->
+        <section id="info" class="bg--light-gray" data-aos="fade-up">
+            <div class="container py__section">
+                <div class="grid__two--equal column-gap--medium row-gao--medium">
+                    <div class="order--2">
+                        <h3 class="title__section--small color--blue">DOMINGO 23 DE ABRIL</h3>
+                        <h2 class="title__section color--black--primary">28º CORRIDA <br> CARABINEROS DE CHILE</h2>
+
+                        <p class="text">
+                            ¡No te pierdas la gran corrida del Día del Carabinero en Santiago! Este evento se llevará a cabo el domingo 23 de abril en el marco del 96º Aniversario de la institución. Únete a la celebración y corre 10 o 5 kilómetros. <b>¡Te esperamos!</b>
+                        </p>
+
+                        <div class="button__box">
+                            <a href="#tickets" class="button__primary">INSCRÍBETE <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="content__center--xy order--1 mb-5">
+                        <picture>
+                            <source srcset="img/info-corrida-carabineros-chile.png" type="image/webp">
+                            <img 
+                                alt="Corrida Carabineros de Chile" 
+                                class="img--responsive info__img" 
+                                src="img/info-corrida-carabineros-chile.png" 
+                                data-aos="fade-up"
+                                >
+                        </picture>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+
+
+        <!-- DISTANCIAS -->
+        <section id="distances" class="py__section bg--black--primary text-center">
+            <div class="container" data-aos="fade-up">
+                <h3 class="title__section--small color--greene">HORARIOS</h3>
+                <h2 class="title__section color--white">DISTANCIAS</h2>
+
+                <div class="distances__box">
+                    <div class="text-center distance__box bg--blue">
+                        <p class="distance_hour">
+                            08:30 hrs
+                        </p>
+                        <p class="distance_distance bg--blue">
+                            10K
+                        </p>
+                    </div>
+
+                    <div class="text-center distance__box bg--blue">
+                        <p class="distance_hour">
+                            08:43 hrs
+                        </p>
+                        <p class="distance_distance bg--greene ">
+                            PERSONAS SITUACIÓN DE DISCAPACIDAD
+                        </p>
+                    </div>
+
+                    <div class="text-center distance__box bg--blue">
+                        <p class="distance_hour">
+                            08:45 hrs
+                        </p>
+                        <p class="distance_distance bg--greene">
+                            5K
+                        </p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- PLACE -->
+        <section id="place" class="py__section bg--light-gray text-center">
+            <div class="container" data-aos="fade-up">
+                <h3 class="title__section--small color--blue">LUGAR</h3>
+                <h2 class="title__section color--black--primary">¿ CÓMO LLEGAR ?</h2>
+
+                <p class="text">
+                    Desde la Escuela de Carabineros, ubicada en Avda. Antonio Varas N° 1842, comuna de Providencia. Frente al acceso del Museo histórico de Carabineros de Chile
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.2619646605694!2d-70.61506312336147!3d-33.44248089710569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf8301c0d5dd%3A0xd23ffded00622e9a!2sAntonio%20Varas%201690%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1681532834909!5m2!1ses!2scl" width="600" height="450" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 mb-5 iframe__maps"></iframe>
+
+                <a href="https://goo.gl/maps/mNLE26XTNyz7TpE46" target="_blank" class="button__secondary"><i class="fa-solid fa-location-dot"></i> UBICACIÓN</a>
+            </div>
+        </section>
+
+
+
+        <!-- TICKETS -->
+        <section id="tickets" class="py__section text-center">
+            <div class="container" data-aos="fade-up">
+                <h3 class="title__section--small color--blue">INSCRIPCIONES</h3>
+                <h2 class="title__section color--black--primary"><span class="color--blue">¡</span> INSCRIPCIONES GRATUITAS <span class="color--blue">!</span></h2>
+
+                <p class="text">
+                    Inscripriones <span class="color--blue tickets__date">17 de Abril del 2023 ó hasta agotar stock</span>.
+                </p>
+
+
+                <div id="welcu_embed_sale_5801658244" class="welcu_embed mb-5">
+                    <center><img src="https://assets.welcu.com/images/loading.gif" width="50" height="50"></center>
+                </div>
+
+
+                <p class="text">
+                    Los inscritos deberán retirar el <span class="color--blue"> <b>kit de competencia el viernes 21 de abril de 15:00 y 19:30 horas y el día sábado 22 de abril de 10:00 a 18:00 horas</b></span>, en horario continuado, <b>debiendo exhibir el comprobante de inscripción impreso o mostrarlo desde su teléfono celular, mediante el mail que contiene el QR, siendo obligatorio portar su Cédula de Identidad</b>, en la Escuela de Carabineros con único acceso por calle Vasconía.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- BASES -->
+        <section id="bases" class="py__section bg--black--primary text-center">
+            <div class="container" data-aos="fade-up">
+                <h2 class="title__section color--greene">BASES</h2>
+
+                <a href="/pdf/Bases_Corrida_Institucional_ 2023.pdf" class="button__bases" target="_blank">DESCARGAR BASES</a>    
+                
+            </div>
+        </section>
+
+
+    </main>
+    
+
+
+    <footer class="bg--greene">
+        <div class="container content__center--x">
+            <picture>
+                <source srcset="img/logos/logo_carabineros_chile_blanco_desktop.webp" type="image/webp">
+                <img 
+                    alt="Logo Carabineros de Chile" 
+                    class="logo__footer" 
+                    src="img/logos/logo_carabineros_chile_blanco_desktop.png" 
+                    data-aos="fade-up"
+                    >
+            </picture>
+        </div>
+    </footer>
+
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+                duration: 1000,
+                once: true
+            }
+        );
+    </script>
+
+
+    <!-- Count Down Script -->
+    <script>
+        
+        var countDownDate = new Date("Apr 23, 2023 08:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          
+          var now = new Date().getTime();
+        
+          
+          var distance = countDownDate - now;
+        
+          
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          
+          document.getElementById("days").innerHTML = days;
+
+          document.getElementById("hour").innerHTML = hours;
+
+          document.getElementById("min").innerHTML = minutes;
+
+          document.getElementById("seg").innerHTML = seconds;
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+    </script>
+
+
+    <!-- Welcu Script -->
+    <script type="text/javascript" charset="utf-8">
+        (function() {
+          var embed = document.createElement('script'); embed.type = 'text/javascript'; embed.async = true;
+          embed.src = "https://welcu.com/wolf-events/corridacarabinerosdechile2023/sales/ce8308d361.embed?currency_id=clp&locale=es";
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(embed, s);
+          })();
+    </script>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+    <!-- Scroll effect Script -->
+    <script>
+        window.addEventListener("scroll", function() {
+            var menu = document.querySelector("#menu");
+
+            
+            menu.classList.toggle("bg--greene", window.scrollY > 0);
+            menu.classList.toggle("bg__nav", window.scrollY == 0);
+            
+
+        })
+    </script>
+
+</body>
+</html>
