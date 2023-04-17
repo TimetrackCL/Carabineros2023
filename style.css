@@ -89,6 +89,8 @@ body {
     font-family: var(--font--poppins);
     color: var(--gray--text);
     font-size: 1rem;
+    background-color: #fff;
+    position: relative;
 }
 
 .iframe__maps {
@@ -445,6 +447,7 @@ body {
     border-bottom: 3px solid #fff;
     color: #fff;
 }
+
 
 .nav-link:hover {
     color: #92c020;
