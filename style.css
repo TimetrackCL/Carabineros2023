@@ -207,6 +207,17 @@ body {
     background-color: #00662b;
 }
 
+.bg--hero {
+    background: rgba(109,109,109,1);
+    background: -moz-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(109,109,109,1)), color-stop(16%, rgba(109,109,109,1)), color-stop(100%, rgba(164,165,160,1)));
+    background: -webkit-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: -o-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: -ms-linear-gradient(top, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    background: linear-gradient(to bottom, rgba(109,109,109,1) 0%, rgba(109,109,109,1) 16%, rgba(164,165,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#a4a5a0', GradientType=0 );
+}
+
 
 /*** 
 
@@ -629,7 +640,68 @@ body {
 /*** 
 
 ====================================================================
-	20. BreakPoints
+	16. Modal
+====================================================================
+
+***/
+
+.modal-body {
+    padding: 0;
+}
+
+.p--small {
+    padding: 1rem;
+}
+
+#kit .title__section {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+#kit i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#kit .text {
+    margin-bottom: 0;
+}
+
+
+#kit .text small {
+    font-size: .8rem;
+    line-height: 24px;
+}
+
+.more__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    border-bottom-color: #92c020;
+}
+
+.modal-footer {
+    border-top-color: #92c020;
+}
+
+.btn__modal {
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.btn__modal:hover {
+    border: 1px solid #fff;
+    color: white;
+}
+
+/*** 
+
+====================================================================
+	17. BreakPoints
 ====================================================================
 
 ***/
@@ -710,6 +782,18 @@ body {
     .logo__hero {
         max-width: 300px;
         padding-top: 5rem;
+    }
+
+    .more__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .more__box i {
+        text-align: center;
+        width: 3rem;
     }
 
 }

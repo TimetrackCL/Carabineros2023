@@ -291,6 +291,78 @@
     </div>
 
 
+
+    <!-- MODAL -->
+    <div class="modal fade" id="kit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg--black--primary">
+                <h1 class="modal-title fs-5 color--white" id="staticBackdropLabel">¡Recuerda!</h1>
+                <button type="button" class="btn btn-dark btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg--light-gray">
+                <div class="bg--greene text-center">
+                    <h2 class="title__section color--white">ENTREGA KIT DE COMPETENCIA</h2>
+                </div>
+                <div class="grid__two--equal column-gap--medium row-gap--medium p--small">
+                    <div class="mb-3">
+                        <h3 class="title__section--small"> <i class="fa-solid fa-address-card color--light-greene"></i> ¿Qué necesito?</h3>
+                        <ul class="text" type="square">
+                            <li>Cédula de Identidad</li>
+                            <li>Comprobante de inscripción impreso o desde el celular, mostrando el <b>código QR</b> que contiene.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-3">
+                        <h3 class="title__section--small"><i class="fa-solid fa-location-dot color--light-greene"></i> ¿Dónde?</h3>
+                        <ul class="text" type="square">
+                            <li><b>Escuela de Carabineros</b> con único acceso por <b>calle Vasconía</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg--dark-greene p--small text-center">
+                    <h3 class="title__section--small color--white"><i class="fa-regular fa-calendar color--white"></i><i class="fa-regular fa-clock color--white"></i> <br> ¿Cuándo y a qué hora?</h3>
+                    <div class="grid__two--equal column-gap--medium row-gap--medium">
+                        <div class="color--white mb-2">
+                            <p class="text mb-0"> Viernes <span class=""><b>21</b></span> de Abril</p>
+                            <p class="text"> <b>15:00 hrs</b> hasta <b>19:30 hrs</b>.</p>
+                        </div>
+                        <div class="color--white mb-2">
+                            <p class="text mb-0"> Sábado <span class=""><b>22</b></span> de Abril</p>
+                            <p class="text"> <b>10:00 hrs</b> hasta <b>18:00 hrs</b>.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="p--small bg--light-gray">
+                    <div class="more__box mb-3">
+                        <i class="fa-brands fa-accessible-icon color--light-greene"></i>
+                        <p class="text">
+                            <small>Las personas interesadas en participar en esta competencia que se encuentran <b>físicamente imposibilitados</b> (Sillas de Ruedas por ejemplo) pueden enviar un <b>representante con un poder simple y copia de Cédula de Identidad</b> para el retiro del kit de competencia.</small>
+                        </p>
+                    </div>
+
+                    <div class="more__box">
+                        <i class="fa-solid fa-children color--light-greene"></i>
+                        <p class="text">
+                            <small>Los <b>corredores menores de 18 años de edad</b> deberán hacer el retiro del kit de competencia acompañados de su <b>padre o algún representante legal</b>, que firme la autorización a participar y la liberación de responsabilidades correspondientes. La edad mínima de participación es de 15 años.</small>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer bg--greene">
+                <button type="button" class="btn btn__modal" data-bs-dismiss="modal">CERRAR</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+      
+
+
     <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -353,6 +425,15 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        const myModal = new bootstrap.Modal('#kit');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            myModal.show();
+        });
+    </script>
 
 
     <!-- Scroll effect Script -->
