@@ -89,7 +89,7 @@
     </header>
 
 
-    <!-- Cuenta regresiva -->
+    <!-- Cuenta regresiva
     <div class="count__down color--white bg--greene">
         <div class="container box__clock">
             <div class="content__center--y count__title__box">
@@ -126,6 +126,7 @@
             </div>
         </div>
     </div>
+    -->
 
 
     
@@ -360,6 +361,68 @@
         </div>
     </div>
   
+
+
+    <!-- MODAL -->
+    <div class="modal fade" id="result" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg--black--primary">
+                <h1 class="modal-title fs-5 color--white" id="staticBackdropLabel"><i class="fa-solid fa-stopwatch"></i>
+                </h1>
+                <button type="button" class="btn btn-dark btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg--light-gray">
+                <div class="text-center p--small">
+                    <h2 class="title__section color--light-greene mb-0"><i class="fa-solid fa-medal"></i> <br>    ¡ Felicitaciones!</h2>
+                    <h2 class="title__section color--greene mb-0">¡ Completaste la carrera!</h2>
+                </div>
+
+                <div class="bg--light-greene p--small">
+                    <div class="text-center">
+                        <span class="title__section--small "><i class="fa-solid fa-stopwatch color--white"></i></span>
+                        <p class="title__section--small mb-3 color--white pt-2">
+                            Tú <b>TIEMPO</b> lo puedes encontrar:
+                        </p>
+                    </div>
+
+                    <div class="grid__two--equal column-gap--medium row__gap--small">
+                        <div>
+                            <h3 class="sub-title text color--white text-center mb-4">Desde el siguiente LINK:</h3>
+                            <div class="content__center--xy">
+                                <a href="https://results.sporthive.com/events/7053767615163678208" class="button__secondary">RESULTADOS</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text text-center bg--light-gray mb-0">
+                                <h3 class="sub-title text color--white text-center mb-2">O bién escanea el siguiente QR:</h3>
+                                <div class="content__center--xy">
+                                    <img src="img/resultados.jpeg" alt="QR Resultados 28 corrida carabineros" class="img--qr">
+                                </div>
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="p--small">
+                    <p class="text text-center mb-0">
+                        Si tienes algunas dudas escribenos al whatsapp: <br> <a href="tel:+56941711204" class="link-success"><i class="fa-brands fa-whatsapp color--light-greene"></i> +56 9 4171 1204</a>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="modal-footer bg--greene">
+                <button type="button" class="btn btn__modal" data-bs-dismiss="modal">CERRAR</button>
+            </div>
+        </div>
+        </div>
+    </div>
       
 
 
@@ -428,7 +491,7 @@
 
 
     <script type="text/javascript">
-        const myModal = new bootstrap.Modal('#kit');
+        const myModal = new bootstrap.Modal('#result');
 
         window.addEventListener('DOMContentLoaded', () => {
             myModal.show();
